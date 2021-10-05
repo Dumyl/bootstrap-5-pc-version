@@ -1,0 +1,951 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+section,
+footer {
+    background: #fff;
+}
+
+/* = = = = = = = = = =  content = = = = = = = = = = = */
+.content-bg {
+    padding: 120px 0;
+}
+
+.content-md {
+    padding: 100px 0;
+}
+
+.content-lg {
+    padding: 93px 0;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #FCD907;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* .header-2.sticky {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 10;
+    display: block;
+    box-shadow: 0 2px 2px #555;
+} */
+
+/* = = = = = = = = = =  header section = = = = = = = = = = = */
+
+.header-0 {
+    width: 100%;
+    background: #121f44;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-0 span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.header-01 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.header-01 a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.header-01 a:hover {
+    color: #f39c12;
+}
+
+.header-01 li {
+    padding: 0 20px;
+    list-style: none;
+}
+
+.header-01 li i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.header-02 {
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+.header-2 {
+    /* width: 100%; */
+    /* position: fixed; */
+    z-index: 9999;
+    background: rgb(248, 244, 245);
+    transition: all 0.5s;
+}
+
+.header-002 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .header-2 img {
+    width: 100%;
+} */
+
+/* .header-2 .header-2-1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+} */
+
+.header-2-1 li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.header-2-1 li a {
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.header-2-1 li a:hover {
+    color: #f39c12;
+}
+
+/* header slider */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.carousel-inner .header-3,
+.carousel-inner .header-4 {
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    color: #fff;
+}
+
+.carousel-inner .header-3 span,
+.carousel-inner .header-4 span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.carousel-inner .header-3 h2,
+.carousel-inner .header-4 h2 {
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+.carousel-inner .header-3 .header-3-para,
+.carousel-inner .header-4 .header-4-para {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.937;
+    max-width: 450px;
+    margin-bottom: 35px;
+    color: #ffffff;
+}
+
+.carousel-inner .header-3 a,
+.carousel-inner .header-4 a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #f39c12;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    padding: 7px 20px;
+    transition: all 0.5s ease;
+}
+
+.carousel-inner .header-3 a:hover,
+.carousel-inner .header-4 a:hover {
+    /* border: 2px solid #f39c12; */
+    color: #000;
+    /* background: none; */
+}
+
+/* = = = = = = = = = =  Service = = = = = = = = = = = */
+.content-bg h2,
+.content-md h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(6, 15, 94);
+    width: 500px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.content-bg h2::before,
+.content-md h2::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    background: #f39c12;
+    bottom: -8px;
+}
+
+.content-bg p {
+    font-size: 15px;
+    font-weight: 200;
+    width: 500px;
+    padding: 0 20px 0 0;
+    margin-bottom: 50px;
+}
+
+.content-bg a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 30px;
+    background: #f39c12;
+    transition: all 0.5s ease;
+}
+
+.content-bg a:hover {
+    /* background: none; */
+    color: #000;
+    /* border: 1px solid #f39c12; */
+}
+
+.content-md p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+.service-01 {
+    width: 31%;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.service-02 {
+    display: flex;
+    padding: 30px 30px 0px 20px;
+    background: #fff;
+}
+
+.service-3 {
+    margin-left: 20px;
+}
+
+.service-3 h4 {
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(6, 15, 94);
+}
+
+.service-3 p {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* = = = = = = = = = =  Project = = = = = = = = = = = */
+.project .content-bg {
+    background: linear-gradient(rgba(18, 31, 68, 0.9), rgba(18, 31, 68, 0.9)), url(../image/project/diamond.png);
+}
+
+.project .content-bg h2,
+.project .content-bg p {
+    color: #fff;
+}
+
+.project .content-bg p {
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.project .content-bg .pj-ul {
+    display: flex;
+}
+
+.project .content-bg .pj-ul li {
+    list-style: none;
+}
+
+.project .content-bg .pj-ul li a {
+    text-decoration: none;
+    display: inline-block;
+    background: #fff;
+    margin-left: 5px;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    padding: 7px 20px;
+    /* transition: all 0.5s ease; */
+}
+
+.project .content-bg .pj-ul li a.active {
+    background: #f39c12;
+}
+
+.project .content-bg .pj-ul li a:hover {
+    background: #f39c12;
+}
+
+.project-1 {
+    margin-top: 40px;
+}
+
+.project-1 .project-2 {
+    margin-bottom: 40px;
+}
+
+.project-1 .project-2 .project-02 {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.project-1 .project-2 img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+.project-1 .project-2 img:hover {
+    transform: rotate(2deg) scale(1.13);
+}
+
+.project-1 .project-2 h5 a {
+    font-weight: 500;
+    color: #fff;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.project-1 .project-2 .pj-1-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project-1 .project-2 .pj-1-ul li {
+    display: inline-block;
+    color: #fff;
+}
+
+.project-1 .project-2 .pj-1-ul li a {
+    color: #fff;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.project-1 .project-2 .pj-1-ul li:nth-child(1) a::after {
+    content: "/";
+    padding: 0 5px;
+}
+
+.project-1 .project-2 .pj-1-ul li:nth-child(2) a::after {
+    content: "/";
+    padding: 0 5px;
+}
+
+.project-1 .project-2 a {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    background: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+
+.project-1 .project-2 .pj-1-ul li a:hover,
+.project-1 .project-2 a:hover {
+    color: #f39c12;
+}
+
+/* = = = = = = = = = =  Teams = = = = = = = = = = = */
+.team .content-bg p {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.team-1 {
+    border: 1px solid #dfe4ea;
+    transition: all 0.3s;
+}
+
+.team-1:hover {
+    border-bottom: 2px solid #ffb300;
+}
+
+.team-1 .team-img {
+    border-bottom: 1px solid #ffb300;
+    box-shadow: 0px 9px 1px #ececec;
+}
+
+.team-1 .team-img img {
+    width: 100%;
+}
+
+.team-1 .team-text {
+    margin-top: 10px;
+}
+
+.team-1 .team-text h5,
+.team-1 .team-text p {
+    text-align: center;
+}
+
+.team-1 .team-text h5 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.team-1 .team-text p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.team-1 .team-icon {
+    text-align: center;
+}
+
+.team-1 .team-icon a {
+    display: inline-block;
+    font-size: 13px;
+    color: #121f44;
+    text-decoration: none;
+    background: none;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.team-1 .team-icon a:hover {
+    color: #f39c12;
+}
+
+.team-2 .content-md .team-2-h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(6, 15, 94);
+    width: 100%;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.team-2 .content-md .team-2-h2::before {
+    content: "";
+    position: absolute;
+    left: 45%;
+    width: 100px;
+    height: 5px;
+    background: #ffb300;
+    bottom: -8px;
+}
+
+.team-2 .content-md p {
+    margin-bottom: 30px;
+}
+
+.team-2 .content-md .team-2-p {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 0;
+    display: none;
+}
+
+.team-2 img {
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ffb300;
+    border-radius: 50%;
+}
+
+.team-2 h3 {
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.team-2 p {
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+/* = = = = = = = = = =  Bog = = = = = = = = = = = */
+.blog .content-bg p {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.blog .content-bg .blog-1-img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.blog .content-bg .blog-1-img img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+.blog .content-bg .blog-1-img img:hover {
+    transform: rotate(2deg) scale(1.13);
+}
+
+.blog-01 {
+    margin-top: 10px;
+}
+
+.blog-01 a {
+    background: none;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.blog-01 a:hover,
+.blog-02 h3 a:hover,
+.blog-02 a:hover {
+    color: #ffb300;
+}
+
+.blog-02 {
+    margin-top: 10px;
+}
+
+.blog-02 h3 a {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.blog-02 p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.blog-02 a {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.blog-04 {
+    margin: 50px 0;
+    border: 1px solid #dfe6e9;
+}
+
+.blog-06 {
+    display: flex;
+    padding: 30px 25px;
+}
+
+/* = = = = = = = = = =  Footer = = = = = = = = = = = */
+.footer {
+    background: #121f44;
+}
+
+.footer-1 {
+    height: 300px;
+    width: 100%;
+}
+
+.footer-1 img {
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-1 p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    width: 100%;
+    padding: 0;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-1 a {
+    padding: 0;
+    margin: 0;
+    color: #ffb300;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    background: none;
+}
+
+.footer-1 h2 {
+    color: #fff;
+    font-size: 22px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.footer-1 ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-1 ul li {
+    list-style: none;
+    line-height: 40px;
+}
+
+.footer-1 ul li a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.5s ease;
+}
+
+.footer-1 ul li a:hover {
+    color: #ffb300;
+    padding-left: 5px;
+}
+
+.email-box {
+    padding: 5px 35px 5px 10px;
+    border-radius: 0;
+    background: transparent;
+    border: 1px solid #8b8b8b;
+    /* border-right: 0; */
+    color: #ffffff;
+    min-height: 41px;
+    position: relative;
+}
+
+.footer-btn {
+    background-color: transparent;
+    color: #fff;
+    min-height: 41px;
+    position: absolute;
+    right: 16%;
+    padding: 0 10px 0 0;
+    border: 0;
+    /* border: 1px solid #8b8b8b; */
+    /* border-left: 0;
+    border-right: 0; */
+    border-radius: 0;
+    transition: all 0.5s ease;
+}
+
+.footer-btn:hover {
+    color: #ffb300;
+}
+
+.footer-1 .footer-icon {
+    margin-top: 20px;
+}
+
+.footer-1 .footer-icon ul {
+    list-style: none;
+}
+
+.footer-1 .footer-icon ul li {
+    display: inline-block;
+}
+
+.footer-1 .footer-icon ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.footer-1 .footer-icon ul li a:hover {
+    background-color: #f39c12;
+    padding: 0;
+    color: #000;
+}
+
+.last-footer {
+    padding-top: 100px;
+    color: #fff;
+    text-align: center;
+}
+
+.last-footer a {
+    color: #fff;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.last-footer a:hover {
+    color: #ffb300;
+}
+
+/* = = = = = = = = = =  Contact = = = = = = = = = = = */
+.contact-1 {
+    margin-top: 95px;
+    background: url(../image/contact/breadcrumb-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-2 {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-2 h1 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact-2 span {
+    color: #fff;
+    font-size: 15px;
+}
+
+.contact-2 span a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-2 span a:hover {
+    border-bottom: 1px solid #ffb300;
+}
+
+.contact-3 {
+    margin-bottom: 20px;
+}
+
+.contact-3 input {
+    width: 45%;
+    padding: 7px 20px;
+    margin-right: 10px;
+    background: rgb(226, 218, 218);
+    border: none;
+    outline: none;
+}
+
+.contact-3-1 {
+    margin-bottom: 20px;
+}
+
+.contact-3-1 input {
+    width: 92%;
+    padding: 7px 20px;
+    margin-right: 10px;
+    background: rgb(226, 218, 218);
+    border: none;
+    outline: none;
+}
+
+.contact-3-2 {
+    margin-bottom: 20px;
+}
+
+.contact-3-2 textarea {
+    width: 92%;
+    height: 100px;
+    padding: 7px 20px;
+    margin-right: 10px;
+    background: rgb(226, 218, 218);
+    border: none;
+    outline: none;
+    font-weight: 100;
+}
+
+.contact-3-3 button {
+    font-size: 15px;
+    font-weight: 500;
+    background: #ffb300;
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.contact-3-3 button:hover {
+    color: #fff;
+}
+
+.contact-4 {
+    width: 90%;
+    color: #fff;
+    background: #ffb300;
+    padding: 20px 30px;
+}
+
+.contact-5 {
+    margin: 30px 30px;
+}
+
+.contact-4 h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact-4 p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 80px 0 0;
+    margin-bottom: 15px;
+}
+
+.contact-4 a {
+    margin-top: 30px;
+    background: #fff;
+    color: #000;
+    font-weight: 400;
+    transition: all 0.5s ease;
+}
+
+.contact-4 a:hover {
+    color: #ffb300;
+}
