@@ -64,7 +64,7 @@ footer {
     pointer-events: auto;
 }
 
-/* .header-2.sticky {
+.header-2.sticky {
     position: fixed;
     width: 100%;
     height: 100px;
@@ -73,7 +73,7 @@ footer {
     z-index: 10;
     display: block;
     box-shadow: 0 2px 2px #555;
-} */
+}
 
 /* = = = = = = = = = =  header section = = = = = = = = = = = */
 
