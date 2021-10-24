@@ -39,6 +39,10 @@ footer {
     padding: 93px 0;
 }
 
+.all-animate {
+    overflow-x: hidden;
+}
+
 .scroll-up-btn {
     position: fixed;
     height: 45px;
@@ -62,17 +66,6 @@ footer {
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;
-}
-
-.header-2.sticky {
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 10;
-    display: block;
-    box-shadow: 0 2px 2px #555;
 }
 
 /* = = = = = = = = = =  header section = = = = = = = = = = = */
@@ -125,50 +118,30 @@ footer {
     float: right;
 }
 
-.header-2 {
-    /* width: 100%; */
-    /* position: fixed; */
-    z-index: 9999;
-    background: rgb(248, 244, 245);
-    transition: all 0.5s;
-}
+/* = = = = = = = = = =  navbar = = = = = = = = = = = */
 
-.header-002 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* .header-2 img {
-    width: 100%;
-} */
-
-/* .header-2 .header-2-1 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-} */
-
-.header-2-1 li {
-    list-style: none;
+.nav-list .nav-item .nav-link {
     display: inline-block;
-    margin-left: 30px;
-}
-
-.header-2-1 li a {
     color: #000;
-    font-size: 15px;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
-    transition: all 0.5s ease;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 400ms ease;
 }
 
-.header-2-1 li a:hover {
-    color: #f39c12;
+.nav-list .nav-item .nav-link:hover {
+    color: #ffb300;
 }
 
-/* header slider */
+.menu-bar {
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+/* = = = = = = = = = =  header slider = = = = = = = = = = = */
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
     display: inline-block;
@@ -202,7 +175,6 @@ footer {
 .carousel-item img {
     width: 100%;
     height: 100vh;
-
 }
 
 .carousel-inner .header-3,
@@ -255,9 +227,7 @@ footer {
 
 .carousel-inner .header-3 a:hover,
 .carousel-inner .header-4 a:hover {
-    /* border: 2px solid #f39c12; */
     color: #000;
-    /* background: none; */
 }
 
 /* = = = = = = = = = =  Service = = = = = = = = = = = */
@@ -284,7 +254,6 @@ footer {
 .content-bg p {
     font-size: 15px;
     font-weight: 200;
-    width: 500px;
     padding: 0 20px 0 0;
     margin-bottom: 50px;
 }
@@ -313,8 +282,6 @@ footer {
 }
 
 .service-01 {
-    width: 31%;
-    margin-left: 20px;
     margin-bottom: 30px;
 }
 
@@ -358,6 +325,8 @@ footer {
 
 .project .content-bg .pj-ul {
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .project .content-bg .pj-ul li {
@@ -374,7 +343,7 @@ footer {
     font-weight: 400;
     font-family: 'Raleway', sans-serif;
     padding: 7px 20px;
-    /* transition: all 0.5s ease; */
+    transition: all 0.5s ease;
 }
 
 .project .content-bg .pj-ul li a.active {
@@ -674,13 +643,20 @@ footer {
 }
 
 .blog-04 {
-    margin: 50px 0;
+    margin: 40px 0;
+    padding: 90px 20px;
     border: 1px solid #dfe6e9;
 }
 
-.blog-06 {
-    display: flex;
-    padding: 30px 25px;
+.blog-05 {
+    padding: 0 10px;
+    max-width: 150px;
+    margin: 0 auto;
+    line-height: 100px;
+}
+
+.blog-05 img {
+    display: inline-block !important;
 }
 
 /* = = = = = = = = = =  Footer = = = = = = = = = = = */
@@ -826,7 +802,6 @@ footer {
 
 /* = = = = = = = = = =  Contact = = = = = = = = = = = */
 .contact-1 {
-    margin-top: 95px;
     background: url(../image/contact/breadcrumb-bg.jpg);
     background-size: cover;
     background-position: center;

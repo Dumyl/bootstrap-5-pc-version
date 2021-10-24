@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    // owlcarousel
-    $('.owl-carousel').owlCarousel({
+    // customer review
+    $('.team-review').owlCarousel({
         loop: true,
         margin: 10,
         nav: true,
@@ -10,18 +10,23 @@ $(document).ready(function () {
             }
         }
     });
-    // sticky bar
-    $(window).scroll(function () {
-        if (this.scrollY > 20) {
-            $('.header-2').addClass("sticky");
-        } else {
-            $('.header-2').removeClass("sticky");
-        }
-        if (this.scrollY > 500) {
-            $('.scroll-up-btn').addClass("show");
-        } else {
-            $('.scroll-up-btn').removeClass("show");
-        }
+
+    // client js
+    $(".blog-06").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 3,
+            },
+            1000: {
+                items: 5,
+            },
+        },
     });
 
     // slide up scroll
@@ -33,30 +38,16 @@ $(document).ready(function () {
     });
 
     // active link
-    $(".header-2-1 li a").click(function (e) { 
+    $(".header-2-1 li a").click(function (e) {
         var current_link = $(this);
         var current_link_href = current_link.attr('href');
-    
+
         $(".header-2-1 li a").removeClass('active');
         current_link.addClass('active');
-        
+
     });
 
 
-    /* amimation scolll */
-    // $('.service-animate-1')
-    //     .css('opacity', 0) // immediately hide element
-    //     .waypoint(function (direction) {
-    //         if (direction === 'down') {
-    //             $(this.element).animate({
-    //                 opacity: 1
-    //             })
-    //         } else {
-    //             $(this.element).animate({
-    //                 opacity: 0
-    //             })
-    //         }
-    //     }, {
-    //         offset: 'bottom-in-view'
-    //     })
+    // animation
+    $('[data-aos]').parent().addClass('all-animate');
 });
