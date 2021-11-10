@@ -28,7 +28,19 @@ $(document).ready(function () {
             },
         },
     });
-
+    // sticky
+    $(window).scroll(function () {
+        if (this.scrollY > 20) {
+            $('.navbar').addClass("sticky");
+        } else {
+            $('.navbar').removeClass("sticky");
+        }
+        if (this.scrollY > 500) {
+            $('.scroll-up-btn').addClass("show");
+        } else {
+            $('.scroll-up-btn').removeClass("show");
+        }
+    });
     // slide up scroll
     $('.scroll-up-btn').click(function () {
         $('html').animate({
@@ -38,11 +50,11 @@ $(document).ready(function () {
     });
 
     // active link
-    $(".header-2-1 li a").click(function (e) {
+    $(".nav-list .nav-item .nav-link").click(function (e) {
         var current_link = $(this);
         var current_link_href = current_link.attr('href');
 
-        $(".header-2-1 li a").removeClass('active');
+        $(".nav-list .nav-item .nav-link").removeClass('active');
         current_link.addClass('active');
 
     });

@@ -119,6 +119,17 @@ footer {
 }
 
 /* = = = = = = = = = =  navbar = = = = = = = = = = = */
+.navbar {
+    margin-top: 43px;
+    padding: 0 100px;
+    background-color: #fff;
+}
+
+.navbar.sticky {
+    margin-top: 0px;
+    border-bottom: 1px solid #f39c12;
+}
+
 
 .nav-list .nav-item .nav-link {
     display: inline-block;
@@ -135,13 +146,58 @@ footer {
     color: #ffb300;
 }
 
-.menu-bar {
-    font-size: 25px;
-    display: none;
-    cursor: pointer;
+.nav-list .nav-item .nav-link.active {
+    color: #ffb300;
 }
 
+.menu-bar {
+    color: #000;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
 /* = = = = = = = = = =  header slider = = = = = = = = = = = */
+#slid {
+    margin-top: 90px;
+}
+
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
     display: inline-block;
@@ -174,7 +230,9 @@ footer {
 
 .carousel-item img {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .carousel-inner .header-3,
@@ -236,7 +294,6 @@ footer {
     font-size: 40px;
     font-weight: 600;
     color: rgb(6, 15, 94);
-    width: 500px;
     margin-bottom: 40px;
     position: relative;
 }
@@ -253,7 +310,7 @@ footer {
 
 .content-bg p {
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 400;
     padding: 0 20px 0 0;
     margin-bottom: 50px;
 }
@@ -277,12 +334,17 @@ footer {
 
 .content-md p {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 80px;
 }
 
 .service-01 {
     margin-bottom: 30px;
+}
+
+.service-2 img {
+    width: 100px;
+    height: 50px;
 }
 
 .service-02 {
@@ -305,11 +367,15 @@ footer {
 .service-3 p {
     font-size: 13px;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 /* = = = = = = = = = =  Project = = = = = = = = = = = */
+
+
 .project .content-bg {
     background: linear-gradient(rgba(18, 31, 68, 0.9), rgba(18, 31, 68, 0.9)), url(../image/project/diamond.png);
+    overflow-x: hidden;
 }
 
 .project .content-bg h2,
@@ -318,8 +384,8 @@ footer {
 }
 
 .project .content-bg p {
-    width: 100%;
     font-weight: 500;
+    font-size: 13px;
     letter-spacing: 1px;
 }
 
@@ -532,7 +598,7 @@ footer {
 
 .team-2 .content-md .team-2-p {
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .owl-carousel .owl-item img {
@@ -563,7 +629,7 @@ footer {
 .team-2 p {
     margin-top: 10px;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 /* = = = = = = = = = =  Bog = = = = = = = = = = = */
@@ -599,7 +665,7 @@ footer {
     padding: 0;
     margin: 0;
     color: #000;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
 }
 
@@ -619,14 +685,14 @@ footer {
     display: inline-block;
     background: none;
     color: #000;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
     text-decoration: none;
 }
 
 .blog-02 p {
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 300;
 }
 
@@ -636,7 +702,7 @@ footer {
     display: inline-block;
     background: none;
     color: #000;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
     text-decoration: underline;
     text-transform: uppercase;
@@ -665,7 +731,6 @@ footer {
 }
 
 .footer-1 {
-    height: 300px;
     width: 100%;
 }
 
@@ -728,29 +793,18 @@ footer {
     border-radius: 0;
     background: transparent;
     border: 1px solid #8b8b8b;
-    /* border-right: 0; */
+    width: 300px;
     color: #ffffff;
     min-height: 41px;
     position: relative;
+    margin-bottom: 10px;
 }
 
-.footer-btn {
-    background-color: transparent;
+.btn-foot {
     color: #fff;
-    min-height: 41px;
-    position: absolute;
-    right: 16%;
-    padding: 0 10px 0 0;
-    border: 0;
-    /* border: 1px solid #8b8b8b; */
-    /* border-left: 0;
-    border-right: 0; */
-    border-radius: 0;
-    transition: all 0.5s ease;
-}
-
-.footer-btn:hover {
-    color: #ffb300;
+    background-color: #ffb300;
+    padding: 3px 20px;
+    font-size: 12px;
 }
 
 .footer-1 .footer-icon {
@@ -784,20 +838,22 @@ footer {
 }
 
 .last-footer {
-    padding-top: 100px;
+    font-size: 13px;
+    padding-top: 20px;
     color: #fff;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .last-footer a {
-    color: #fff;
+    color: #ffb300;
     background: none;
     padding: 0;
     margin: 0;
 }
 
 .last-footer a:hover {
-    color: #ffb300;
+    color: #fff;
 }
 
 /* = = = = = = = = = =  Contact = = = = = = = = = = = */
@@ -890,7 +946,7 @@ footer {
 }
 
 .contact-4 {
-    width: 90%;
+    width: 100%;
     color: #fff;
     background: #ffb300;
     padding: 20px 30px;
